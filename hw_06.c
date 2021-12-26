@@ -145,7 +145,7 @@ int main()
 {
     setlocale(LC_ALL, "");
 
-    printf("1 ќчередь с приоритетным исключением\n\n");
+    printf("1 Очередь с приоритетным исключением\n\n");
     initQueue();
     ins_pin(1, 11);
     ins_pin(3, 22);
@@ -179,7 +179,7 @@ int main()
     }
     printQueue();
 
-    printf("\n\n2 ѕеревод из дес¤тичной в двоичную систему счислени¤ с использованием стека\n\n");
+    printf("\n\n2 Перевод из десятичной в двоичную систему счисления с использованием стека\n\n");
     for(int i = -3; i < 4; i++)
     {
         printf("int i = %d\n", i);
@@ -205,8 +205,8 @@ int main()
     printf("\ndouble dbV = 16\n");
     PrintBin((void *)&dbV, sizeof(dbV));
 
-    char strS[] = "abcABC123абвјЅ¬";
-    printf("char strS[] abcABC123абвјЅ¬\n");
+    char strS[] = "abcABC123абвАБВ";
+    printf("char strS[] abcABC123абвАБВ\n");
     PrintBin((void *)&strS, sizeof(strS));
 
     return 0;
